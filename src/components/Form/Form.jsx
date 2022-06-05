@@ -244,7 +244,7 @@ const Form = () => {
       </div>
       <div className="form-actions">
         {isSubmitting && <p className="error-text">Sending form data...</p>}
-        {errors.length && (
+        {errors.length>0 && (
           <React.Fragment>
           <p className="error-text">Sending data failed!</p>
           <ul>
